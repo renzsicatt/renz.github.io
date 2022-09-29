@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<style>
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+<html>
+	<head>
+		<title>PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/imagestyle.css" />
+		</head>
+	<body class="is-preload">	
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">	
+							<img src="images/Pic.jpg" id="mainpic" alt="" />
+							<h1 id="title">Renz-Enald H. Sicat</h1>
+							<p>Programmer</p>
+						</div>
+						
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+				</div>
+			</div>
+
+			
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section  id="top" class="one dark cover">
+						<div class="container">
+							<header>
+								
+										<div class="headderpic">
+											<img src="images/headerpic.png"/>
+										</div>
+										<div class="Text">
+											<h4>
+												<p class="hi">Hi! I am</p> <h2 class="animate-charcter">RENZ</h2><br/>
+												 and I Develop Software/Systems. Currently Residing at Karuhatan Valenzuela City.
+												I have developed many types of Desktop Applications. But I want to learn more.
+												Have 3yrs of experience as Programmer.
+											</h4>
+											<br/>
+											Interested in Working together? Let's have a talk.
+										</div>
+										
+											
+
+										<div id="wrap">
+												<a href="assets/Renz-Sicat-Resume.docx" class="btn-slide2">
+												  <span class="circle2"><i class="fa fa-download"></i></span>
+												  <span class="title2">Download CV</span>
+												  <span class="title-hover2">Click here</span>
+												</a>
+										</div>
+											
+										<ul class="socmedlinks">
+											<li><a href="https://www.facebook.com/RenzGotSwagg"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=rnzgtswgg@gmail.com&su=SUBJECT&body=BODY&bcc=rnzgtswgg@gmail.com"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.linkedin.com/in/renz-sicat-333a7b1b0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+										</ul>
+							</header>
+
+								
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container ">
+
+							 <header>
+								<h2>Portfolio</h2>
+							</header>
+							<p> 
+								<!-- Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+							fusce hendrerit lacus ridiculus. -->
+							</p>
+							
+
+							<!-- <div class="row">
+								<div class="col-4 col-12-mobile">
+									<img id="myImg" src="images/Resto Inventory.png" alt="Resto Inventory" style="width:100%;max-width:300px"/>
+									<article class="item">
+										<header>
+											<h3>Resto Inventory</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<img id	="myImg1" src="images/WarehouseManagement.png" alt="Warehouse Management" style="width:100%;max-width:300px"/>
+									<article class="item">
+										<header>
+											<h3>Warehouse Management</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<img id	="myImg2" src="images/Resto Back Office.png" alt="Resto Back Office" style="width:100%;max-width:300px"/>
+									<article class="item">
+										<header>
+											<h3>Resto Back Office</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<img id="myImg" src="images/InvoicingSystem.png" alt="Invoicing System" style="width:100%;max-width:300px"/>
+									<article class="item">
+										<header>
+											<h3>Invoicing Jewelry</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<img id	="myImg1" src="images/Resto Front end.png" alt="Resto Front End" style="width:100%;max-width:300px"/>
+									<article class="item">
+										<header>
+											<h3>Resto Front-END (POS)</h3>
+										</header>
+									</article>
+								</div>
+							</div> -->
+
+
+							<div class="slider">
+								<div class="slider-container">
+									<div class="slide active" style="background-image: url('images/Resto Inventory.png');">
+										<div class="info">
+											<h1>Restaurant Inventory</h1>
+											<p>The Inventory of Resto Connected to POS and Back Office.</p>
+										</div>
+									</div>
+									<div class="slide"  style="background-image: url('images/WarehouseManagement.png');">
+										<div class="info">
+											<h1>Warehouse Management </h1>
+											<p>A system that was used to monitor the in and out of stocks from the pallet.</p>
+										</div>
+									</div>
+									<div class="slide"  style="background-image: url('images/Resto Back Office.png');">
+										<div class="info">
+											<h1>Resto Back Office</h1>
+											<p>This is the back Office of the POS.</p>
+										</div>
+									</div>
+									<div class="slide"  style="background-image: url('images/InvoicingSystem.png');">
+										<div class="info">
+											<h1>Invoicing System</h1>
+											<p>The system is used to monitor the Inventory and Sales Invoice</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="eraser"></div>
+								<div class="buttons-container">
+									<button id="previous"><i class="fas fa-chevron-left"></i></i></button>
+									<button id="next"><i class="fas fa-chevron-right"></i></button>
+								</div>
+							</div>
+
+
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">	
+								<div class="row1">
+									<!-- <div class="column" style="background-color: red;"> -->
+									<div class="column Education" >
+										
+										<header class="resume-title">Education</header>
+										<div class="resume-items">
+											<h4> TERTIARY </h1>
+											<h1 class="date"> 2015 - PRESENT (UNDERGRAD) </h1>
+											<p id="companyname"><em>GLOBAL RECIPROCAL COLLEGES</em></p>
+											<p id="companyname"><em>BACHELOR OF SCIENCE IN INFORMATION AND TECHNOLOGY</em></p>
+											<ul id="ullist">
+												<li>PROGRAMMING CHAMPION–SENIOR PROGRAMMING COMPETITION</li>
+											</ul>
+										</div>
+										<div class="resume-items">
+											<h4> SECONDARY </h1>
+											<h1 class="date"> 2011 - 2015 </h1>
+											<p id="companyname"><em>MALINTA NATIONAL HIGH SCHOOL</em></p>
+										</div>
+
+										<div class="resume-items">
+											<h4> PRIMARY  </h1>
+											<h1 class="date"> 2006 - 2011 </h1>
+											<p id="companyname"><em>MALINTA ELEMENTARY SCHOOL</em></p>
+										</div>
+
+								 	</div>
+									
+									 <!-- <div class="column" style="background-color: pink"> -->
+										<div class="column experience">
+											<header class="resume-title">Professional experience</header>
+											<div class="resume-items">
+												<h4> PROGRAMMER </h1>
+												<h1 class="date"> January 2020 - Sept 2022 </h1>
+												<p id="companyname"><em>California Computer Tech Inc</em></p>
+												<ul id="ullist">
+													<li>Analyze and design new algorithms as required by the users need.</li>
+													<li>Revise development projects by updating code to improve functionality </li>
+													<li>Client meeting to gather requirements and other information.</li>
+													<li>Generate series of reports as required by the client.</li>
+													<li>Train and demo the system to the users</li>
+												</ul>
+											</div>
+											<div class="resume-items">
+												<h4> PROGRAMMER (INTERN) </h1>
+												<h1 class="date"> July 2019 - December 2019 </h1>
+												<p id="companyname"><em>Monarch One Solutions & Technology Services</em></p>
+												<ul id="ullist">
+													<li>Worked on the full software development life cycle from gathering requirements to building, testing, and maintaining code that improved the speed of customer data request.</li>
+													<li>Developed a desktop app using C# and SQL Server</li>
+													<li>Client meeting to gather requirements and other information</li>
+													<li>Build Reports using Crystal Report.</li>
+												</ul>
+											</div>
+											
+								 		</div>
+								 </div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>
+							<!-- Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor. -->
+							</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			  </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/ddfullscreenimageviewer.js"></script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("myImg");
+				var img1 = document.getElementById("myImg1");
+				var img2 = document.getElementById("myImg2");
+				var img3 = document.getElementById("myImg3");
+				var img4 = document.getElementById("myImg4");
+				var img5 = document.getElementById("myImg5");
+				var img6 = document.getElementById("myImg6");
+
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+
+				img1.onclick = function(){
+
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				img2.onclick = function(){
+
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+			</script>
+			<script>
+		const slides = document.querySelectorAll('.slider-container .slide'); // get all the slides
+const eraser = document.querySelector('.eraser'); // the eraser
+const prev = document.getElementById('previous'); // previous button
+const next = document.getElementById('next'); // next button
+const intervalTime = 6000; // time until nextSlide triggers in miliseconds
+const eraserActiveTime = 500; // time to wait until the .eraser goes all the way
+let sliderInterval; // variable used to save the setInterval and clear it when needed
+
+
+const nextSlide = () => {
+  // Step 1. Add the .active class to the eraser - this will trigger the eraser to move to the left.
+	eraser.classList.add('active');
+   // Step 2. Set a timeout that will allow the eraser to move all the way to the left. This is where we'll use the eraserActiveTime - it has to be the same as the CSS value we mentioned above.
+	setTimeout(() => {
+    // Step 3. Get the active .slide and toggle the .active class on it (in this case, remove it).
+		const active = document.querySelector('.slide.active');
+		active.classList.toggle('active');
+    // Step 4. Check to see if the .slide has a next element sibling available. If it has, add the .active class to it.
+		if(active.nextElementSibling) {
+			active.nextElementSibling.classList.toggle('active');
+		} else {
+      // Step 5. If it's the last element in the list, add the .active class to the first slide (the one with index 0).
+			slides[0].classList.toggle('active');
+		}
+    // Step 6.Remove the .active class from the eraser - this will trigger the eraser to move back to the right. It also waits 200 ms before doing this (just to give enough time for the next .slide to move in place).
+		setTimeout(() => {
+			eraser.classList.remove('active');
+		}, 180);
+	}, eraserActiveTime);
+}
+
+//Button functionality
+const prevSlide = () => {
+	eraser.classList.add('active');
+	setTimeout(() => {
+		const active = document.querySelector('.slide.active');
+		active.classList.toggle('active');
+    // The *changed* part from the nextSlide code
+		if(active.previousElementSibling) {
+			active.previousElementSibling.classList.toggle('active');
+		} else {
+			slides[slides.length-1].classList.toggle('active');
+		}
+    // End of the changed part
+		setTimeout(() => {
+			eraser.classList.remove('active');
+		}, 180);
+	}, eraserActiveTime);
+}
+
+next.addEventListener('click', () => {
+	nextSlide();
+	clearInterval(sliderInterval);
+	sliderInterval = setInterval(nextSlide, intervalTime);
+});
+
+prev.addEventListener('click', () => {
+	prevSlide();
+	clearInterval(sliderInterval);
+	sliderInterval = setInterval(nextSlide, intervalTime);
+});
+
+sliderInterval = setInterval(nextSlide, intervalTime);
+
+// Initial slide
+setTimeout(nextSlide, 500);
+			</script>
+		
+	</body>
+</html>
